@@ -1,7 +1,12 @@
+import { SearchBar } from './components/SearchBar'
+import { WeatherCard } from './components/WeatherCard'
+
 export default function App() {
   return (
-    <>
-      <h1 className="">Weather App</h1>
-    </>
+    <main>
+      <SearchBar />
+
+      <WeatherCard/>
+    </main>
   )
 }
