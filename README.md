@@ -1,16 +1,30 @@
-# React + Vite
+# 🌤️ Mini Weather App (React)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> Pregunté a ChatGPT por un enunciado para reforzar conceptos y este fue el resultado.
 
-Currently, two official plugins are available:
+## 📝 Enunciado
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Crea una pequeña aplicación del tiempo donde el usuario pueda escribir una ciudad y ver la información meteorológica actual.
 
-## React Compiler
+La app debe permitir:
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+- Introducir una ciudad en un buscador.
+- Obtener datos reales de la API pública:  
+  `https://wttr.in/{CITY}?format=j1`
+- Mostrar:  
+  - Nombre de la ciudad  
+  - Temperatura  
+  - Descripción del clima  
+  - Icono o indicador visual
+- Manejar correctamente los estados de **cargando**, **error** y **datos listos**.
 
-## Expanding the ESLint configuration
+## 🎯 Objetivo
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Reforzar:
+
+- Componentes y props  
+- useState  
+- useEffect + cleanup  
+- Custom hooks  
+- Fetching de datos  
+- Testing básico
