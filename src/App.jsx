@@ -1,13 +1,14 @@
 import { useState } from 'react'
 import { WeatherCard } from './components/WeatherCard'
 import { SearchBar } from './components/SearchBar'
+import { toPascalCase } from './utils/stringUtils'
 
 export default function App() {
   const [cityName, setCityName] = useState()
 
   const handleClick = () => {
     const cityInput = document.querySelector('input[name="city"]').value
-    setCityName(cityInput)
+    setCityName(toPascalCase(cityInput))
   }
 
   return (
